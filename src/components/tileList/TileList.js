@@ -6,8 +6,7 @@ export const TileList = ({arrayObjects}) => {
       <div>
         {
           arrayObjects.map((object,index) => {
-            const { name, ...description } = object;
-            
+            const { name, ...description } = object;            
             return <Tile key={index} name= {name} description= { description } />
           })
         }           

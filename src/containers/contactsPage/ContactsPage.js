@@ -15,10 +15,8 @@ export const ContactsPage = ({ contacts, addContacts }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    /*
-    Add contact info and clear data
-    if the contact name is not a duplicate
-    */
+    /* Add contact info and clear data if the contact name is not a duplicate */
+    
     if(!isDuplicate){
       const newContact = {
         name : name,
